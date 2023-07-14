@@ -2,14 +2,14 @@
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildThisFileDirectory)TidyBuild.user.props" Condition="Exists('$(MSBuildThisFileDirectory)TidyBuild.user.props')"/>
   <PropertyGroup>
-    <FullVersion>3.6.0</FullVersion>
+    <FullVersion>3.7.0</FullVersion>
     <FullVersion Condition=" '$(APPVEYOR_BUILD_VERSION)'!='' ">$(APPVEYOR_BUILD_VERSION)</FullVersion>
     <FullVersion Condition=" '$(GITHUB_RUN_NUMBER)'!='' ">$(FullVersion).$(GITHUB_RUN_NUMBER)</FullVersion>
     <ProductName>PanelSwWixExtension</ProductName>
     <Manufacturer>Panel::Software</Manufacturer>
 
     <!--
-    <NugetPrereleaseVersion>-rc.3</NugetPrereleaseVersion>
+    <NugetPrereleaseVersion>-psw-wix</NugetPrereleaseVersion>
     -->
 
     <!-- CMake -->
@@ -28,6 +28,7 @@
 
     <DefineConstants Condition="'$(MSBuildProjectExtension)' != '.csproj'">JetVersion=$(FullVersion);JetProductName=$(ProductName);JetManufacturer=$(Manufacturer);$(DefineConstants)</DefineConstants>
 
+    <IsPackable>false</IsPackable>
     <SuppressPdbOutput>true</SuppressPdbOutput>
     <SignAssembly Condition="Exists('$(AssemblyOriginatorKeyFile)')">true</SignAssembly>
 
