@@ -1,0 +1,24 @@
+<Project Sdk="WixToolset.Sdk">
+  <PropertyGroup>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <ProductVersion>3.8</ProductVersion>
+    <OutputName>$(MSBuildProjectName)</OutputName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ExecOnComponentUT.wxs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="WixToolset.Util.wixext" />
+    <PackageReference Include="TidyBuild" />
+    <WixExtension Include="PanelSwWixExtension">
+      <HintPath>..\..\build\Any CPU\bin\$(Configuration)\PanelSwWixExtension\PanelSwWixExtension.dll</HintPath>
+      <Name>PanelSwWixExtension</Name>
+    </WixExtension>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="non-printable.txt" />
+  </ItemGroup>
+</Project>

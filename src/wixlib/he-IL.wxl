@@ -1,0 +1,65 @@
+<WixLocalization Culture="he-il" xmlns="http://wixtoolset.org/schemas/v4/wxl">
+  <String Overridable="yes" Id="CustomUninstallKey" Value="כתיבת ערכים ל- Registry" />
+  <String Overridable="yes" Id="RemoveRegistryValue" Value="מחיקת ערכים מה- Registry" />
+  <String Overridable="yes" Id="Telemetry" Value="שליחת מידע טלמטרי" />
+  <String Overridable="yes" Id="ShellExecute" Value="הרצת פקודה &quot;[1]&quot; [2] ב- &quot;[3]&quot; בפעולת [4]" />
+  <String Overridable="yes" Id="TaskScheduler" Value="Configuring Scheduled Tasks" />
+  <String Overridable="yes" Id="ExecOnComponent" Value="הרצת פקודות" />
+  <String Overridable="yes" Id="ExecOnComponentTemplate" Value="מריץ [1]" />
+  <String Overridable="yes" Id="ExecOnFailure" Value="כשלון בהרצת פקודה [2]" />
+  <String Overridable="yes" Id="ExecOnPromptAlways" Value="בוצעה פקודה [2]:&#xA;[3]" />
+  <String Overridable="yes" Id="ExecOnConsoleFailure" Value="פקודה [2] החזירה שגיאה&#xA;[3]" />  
+  <String Overridable="yes" Id="ServiceConfig" Value="הגדרת שירותי מערכת" />
+  <String Overridable="yes" Id="ServiceConfigFailure" Value="כשלון בהגדרת שירותי מערכת [2]" />
+  <String Overridable="yes" Id="InstallUtil" Value="מתקין שירותי מערכת .NET" />
+  <String Overridable="yes" Id="SqlSearch" Value="מבצע שאילתות SQL" />
+  <String Overridable="yes" Id="PSW_SqlSearchFailure" Value="כשלון בשאילתות SQL '[2]':&#xA;[3]" />
+  <String Overridable="yes" Id="BackupAndRestore" Value="מגבה קבצים" />
+  <String Overridable="yes" Id="TopShelf" Value="מתקין שירותי מערכת TopShelf" />
+  <String Overridable="yes" Id="TopShelfFailure" Value="כשלון בהגדרת שירותי מערכת [2]" />
+  <String Overridable="yes" Id="CreateSelfSignCertificate" Value="מייצר תעודות בחתימה אישית" />
+  <String Overridable="yes" Id="FileRegex" Value="חיפוש והחלפה בקבצים" />
+  <String Overridable="yes" Id="ForceVersion" Value="החלפת גירסאות קבצים" />
+  <String Overridable="yes" Id="FileRegexTemplate" Value="עורך את [1]" />
+  <String Overridable="yes" Id="SetPropertyFromPipe" Value="קריאת פרמטרים חיצוניים" />
+  <String Overridable="yes" Id="EvaluateExpression" Value="חישוב נוסחאות" />
+  <String Overridable="yes" Id="CertificateHashSearch" Value="איתור תעודות" />
+  <String Overridable="yes" Id="ZipFile" Value="יצירת ארכיון קבצים" />
+  <String Overridable="yes" Id="ZipFileTemplate" Value="מכווץ קבצים מ- [1] ל- [2]" />
+  <String Overridable="yes" Id="Unzip" Value="פריסת ארכיון קבצים" />
+  <String Overridable="yes" Id="UnzipTemplate" Value="פורס קבצים מ- [1] ל- [2]" />
+  <String Overridable="yes" Id="DiskSpace" Value="חישוב מקום פנוי בכונן" />
+  <String Overridable="yes" Id="Dism" Value="הפעלת מאפייני מערכת" />
+  <String Overridable="yes" Id="DismTemplate" Value="מפעיל את [1]" />
+  <String Overridable="yes" Id="DismPackageFailure" Value="כשלון בהוספת חבילת מאפייני מערכת [2]:&#xA;[3]" />
+  <String Overridable="yes" Id="DismFeatureFailure" Value="כשלון בהתקנת מאפייני מערכת [2]:&#xA;[3]" />
+  <String Overridable="yes" Id="DismUnwantedFeatureFailure" Value="כשלון בהסרת מאפייני מערכת [2]:&#xA;[3]" />
+  <String Overridable="yes" Id="JsonJpath" Value="עריכת קבצי JSON" />
+  <String Overridable="yes" Id="JsonJpathTemplate" Value="עורך את [1]" />
+  <String Overridable="yes" Id="JsonJpathSearch" Value="חיפוש בקבצי JSON" />
+  <String Overridable="yes" Id="AccountSidSearch" Value="איתור מזהי אבטחה" />
+  <String Overridable="yes" Id="PSW_SqlScript" Value="הרצת סקריפטים SQL" />
+  <String Overridable="yes" Id="PSW_SqlScriptTemplate" Value="מריץ סקריפט SQL על שרת '[1]'/'[2]' בסיס נתונים '[3]'" />
+  <String Overridable="yes" Id="PSW_SqlScriptFailure" Value="כשלון בהרצת סקריפטי SQL&#xA;[2]" />
+  <String Overridable="yes" Id="PSW_WebsiteConfig" Value="עדכון אתרי IIS" />
+  <String Overridable="yes" Id="WebsiteConfigFailure" Value="כשלון בעדכון אתרי IIS [2]&#xA;[3]" />
+  <String Overridable="yes" Id="PSW_VersionCompare" Value="השוואת גרסאות" />
+  <String Overridable="yes" Id="PSW_PathSearch" Value="חיפוש קבצים במשתנה סביבה PATH" />
+  <String Overridable="yes" Id="PSW_XslTransform" Value="עדכון קבצי XML" />
+  <String Overridable="yes" Id="PSW_ToLowerCase" Value="ממיר לאותיות קטנות" />
+  <String Overridable="yes" Id="PSW_CheckRebootRequired" Value="בדיקת הצורך באתחול" />
+  <String Overridable="yes" Id="JsonJpathFailure" Value="שגיאה בכתיבת ערך JsonJpath '[2]' ל- '[3]' בקובץ '[4]'.&#xA;[5]" />
+  <String Overridable="yes" Id="WmiSearch" Value="מבצע שאילתות WMI" />
+  <String Overridable="yes" Id="RestartLocalResources" Value="מאתחל תהליכים רצים" />
+  <String Overridable="yes" Id="RestartLocalResourcesTemplate" Value="סוגר את [1]" />
+  <String Overridable="yes" Id="Md5Hash" Value="מחשב פונקציית MD5" />
+  <String Overridable="yes" Id="ConcatFiles" Value="מאחד קבצים" />
+  <String Overridable="yes" Id="ExtractPayload" Value="פורס קבצים זמניים" />
+  <String Overridable="yes" Id="PromptFileDowngrades" Value="סך של [2] קבצים ישונמוכו בפעולה זו.[3]" />
+  <String Overridable="yes" Id="ZipFileError" Value="אירעה שגיאה בהוספת הקובץ [2] לארכיון [3].&#xA;[4]" />
+  <String Overridable="yes" Id="ZipArchiveError" Value="אירעה שגיאה ביצירת קובץ ארכיון [2].&#xA;[3]" />
+  <String Overridable="yes" Id="UnzipArchiveError" Value="אירעה שגיאה בחילוץ מקובץ ארכיון [2].&#xA;[3]" />
+  <String Overridable="yes" Id="UnzipFileError" Value="אירעה שגיאה בחילוץ הקובץ [2] מארכיון [3]" />
+  <String Overridable="yes" Id="IsWindowsVersionOrGreater" Value="בודק את גירסאת מערכת ההפעלה" />
+  <String Overridable="yes" Id="ListProcessorFeatures" Value="בודק זמינות תכונות של המעבד" />
+</WixLocalization>
